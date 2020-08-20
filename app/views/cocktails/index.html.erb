@@ -1,4 +1,4 @@
-<div style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path 'background-image.jpg'  %>');">
+<div class='banner' style="background-image: url('<%= image_path 'background-image.jpg' %>');">
 </div>
 
 <h1>Cocktails</h1>
@@ -6,8 +6,7 @@
   <tbody>
     <% @cocktails.each do |cocktail| %>
       <tr>
-        <td><%= cocktail.name %></td>
-        <td><%= link_to 'Show', cocktail %></td>
+        <td><%= link_to cocktail.name, cocktail %></td>
       </tr>
     <% end %>
   </tbody>
