@@ -1,0 +1,21 @@
+<div class='col-6 '>
+  <p>
+    <strong>Name:</strong>
+    <%= @cocktail.name %>
+    <br>
+    <strong>Dose:</strong>
+    <% @doses.each do | dose | %>
+    <%= dose.description %> <%= dose.ingredient.name %>
+    <%= link_to 'Remove', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?'} %>
+    <% end %>
+  </p>
+</div>
+
+
+<%= render 'doses/new', dose: @dose %>
+<br>
+<%= link_to 'Back', cocktails_path, class: "btn btn-primary" %>
+
+
+
+
