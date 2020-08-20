@@ -3,15 +3,11 @@
 
 <h1>Cocktails</h1>
 
-  <tbody>
+  <ul>
     <% @cocktails.each do |cocktail| %>
-      <tr>
-        <td><%= link_to cocktail.name, cocktail %></td>
-      </tr>
+        <li><%= link_to cocktail.name, cocktail %></li>
     <% end %>
-  </tbody>
+  </ul>
 </table>
 <br>
 <%= link_to 'New Cocktail', new_cocktail_path, class: 'btn btn-primary' %>
-
-<%=  %>

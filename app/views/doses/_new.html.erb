@@ -1,6 +1,6 @@
 <div class=row>
   <div class='col-6 '>
-    <h1>Add a new dose for <%= @cocktail.name %></h1>
+    <h4>Add a new dose for <%= @cocktail.name %></h4>
     <%= simple_form_for [@cocktail, @dose] do |f| %>
       <%= f.input :description %>
       <%= f.association :ingredient %>
