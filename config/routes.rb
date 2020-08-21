@@ -5,4 +5,7 @@ Rails.application.routes.draw do
         end
     end
     resources :doses, only: :destroy
+
+    root to: 'cocktails#index'
 end
+
