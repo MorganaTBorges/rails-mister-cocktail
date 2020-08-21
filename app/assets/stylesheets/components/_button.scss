@@ -8,8 +8,8 @@
     font-size: 20px;
     font-family: 'Prata', serif;
     position: absolute;
-    top: 10px;
-    right: 120px;
+    top: 50px;
+    right: 100px;
     transition: 1s;
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -51,3 +51,55 @@
     border-radius: 0;
     border-bottom: 2px solid #eee;
   }
+
+  .btn-second {
+    background: #222;
+    height: 50px;
+    width: 170px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 20px;
+    font-family: 'Prata', serif;
+    position: absolute;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  .btn-second:hover {
+    background: transparent;
+    color: white;
+  }
+  
+  .btn-second:hover #circle {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
+
+  .btn-back {
+    height: 30px;
+    width: 50px;
+    color: #eee;
+    font-size: 15px;
+    font-family: 'Prata', serif;
+    position: absolute;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 2px;
+  }
+
+  .btn-back:hover {
+    background: transparent;
+    color: white;
+  }
+ 

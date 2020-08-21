@@ -1,27 +1,18 @@
-<div class=row>
-  <div class='col-12 '>
-    <h1 class="my-5">Cocktails</h1>
-        <ul>
-          <% @cocktails.each do |cocktail| %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill if cocktail.photo.attached? %>')">
-          <%= link_to cocktail.name, cocktail %>
-          </div>
-          <% end %>
-        </ul>
-    </div>
-    <br>
-  </div>
+<h1 class="my-5">Classic Cocktails</h1>
+<div class="container-cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="items" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill if cocktail.photo.attached? %>')">
+      <div class="icon-wrapper">
+      </div>
+      <div class="project-name">
+        <p><%= link_to cocktail.name, cocktail %></p>
+      </div>
+    </div> 
+  <% end %> 
 </div>
 
-<%= link_to new_cocktail_path do %>
-  <div id="btn"><span class="noselect">New Cocktail</span><div id="circle"></div></div>
-<% end  %>
+ <%= link_to new_cocktail_path do %>
+    <div id="btn"><span class="noselect">New Cocktail</span><div id="circle"></div></div>
+  <% end  %>
 
 
-
-
-
-
-
-
- 
